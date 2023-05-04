@@ -30,4 +30,20 @@ sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-
 
 ```
 
+Get [latest Python release](https://www.python.org/downloads/source/) and build:
+
+```sh
+wget https://www.python.org/ftp/python/3.11.3/Python-3.11.3.tgz
+tar -xf Python-3.11.3.tgz
+cd Python-3.11.3
+# The --enable-optimizations option optimizes the Python binary by running multiple tests
+./configure --enable-optimizations
+
+# For faster build time, modify the -j to correspond to the number of cores in your processor. You can find the number by typing nproc
+make -j 8
+# Install the Python binaries
+sudo make altinstall
+python3.11 --version
+
+```
 
