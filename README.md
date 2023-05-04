@@ -2,14 +2,15 @@
 
 
 - [Linux Command Line Cheat Sheet](#linux-command-line-cheat-sheet)
-  - [Installing Python on Ubuntu from Source](#installing-python-on-ubuntu-from-source)
+  - [Installing Python from Source](#installing-python-from-source)
     - [The libraries and dependencies necessary to build Python:](#the-libraries-and-dependencies-necessary-to-build-python)
     - [Get latest Python release and build:](#get-latest-python-release-and-build)
     - [Change python version system-wide with update-alternatives python](#change-python-version-system-wide-with-update-alternatives-python)
-    - [Installing Packages](#installing-packages)
+  - [Installing Packages](#installing-packages)
+  - [Installing Python using apt](#installing-python-using-apt)
 
 
-## Installing Python on Ubuntu from Source
+## Installing Python from Source
 
 ### The libraries and dependencies necessary to build Python:
 - [build-essential](https://packages.debian.org/search?lang=en&searchon=names&keywords=build-essential): The build-essentials packages are the form of meta-packages that are essential to compile software. They contain the GNU/g++ compiler collection, GNU debugger, and a few more libraries and tools that are needed for compiling a program. A few other packages, like :
@@ -70,4 +71,18 @@ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python get-pip.py --user
 
 ```
-### [Installing Packages](https://packaging.python.org/en/latest/tutorials/installing-packages/)
+## [Installing Packages](https://packaging.python.org/en/latest/tutorials/installing-packages/)
+
+## Installing Python using apt 
+
+``` sh 
+sudo apt update && sudo apt upgrade -y
+
+# sudo apt show software-properties-common
+sudo apt install software-properties-common
+
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt install python3.11
+python3.11 --version
+
+```
