@@ -7,7 +7,7 @@
     - [Get latest Python release and build:](#get-latest-python-release-and-build)
     - [Change python version system-wide with update-alternatives python](#change-python-version-system-wide-with-update-alternatives-python)
   - [Installing Python using apt](#installing-python-using-apt)
-  - [Installing Packages](#installing-packages)
+  - [Installing Packages using pip](#installing-packages-using-pip)
 
 
 ## Installing Python from Source
@@ -87,7 +87,7 @@ python3.11 --version
 
 ```
 
-## [Installing Packages](https://packaging.python.org/en/latest/tutorials/installing-packages/)
+## [Installing Packages using pip](https://packaging.python.org/en/latest/tutorials/installing-packages/)
 
 ```sh
 # Install ansible using pip
