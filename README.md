@@ -6,8 +6,8 @@
     - [The libraries and dependencies necessary to build Python:](#the-libraries-and-dependencies-necessary-to-build-python)
     - [Get latest Python release and build:](#get-latest-python-release-and-build)
     - [Change python version system-wide with update-alternatives python](#change-python-version-system-wide-with-update-alternatives-python)
-  - [Installing Packages](#installing-packages)
   - [Installing Python using apt](#installing-python-using-apt)
+  - [Installing Packages](#installing-packages)
 
 
 ## Installing Python from Source
@@ -71,7 +71,7 @@ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python get-pip.py --user
 
 ```
-## [Installing Packages](https://packaging.python.org/en/latest/tutorials/installing-packages/)
+
 
 ## Installing Python using apt 
 
@@ -85,4 +85,17 @@ sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt install python3.11
 python3.11 --version
 
+```
+
+## [Installing Packages](https://packaging.python.org/en/latest/tutorials/installing-packages/)
+
+```sh
+# Install ansible using pip
+# --user will cause them to be installed inside the user base’s binary directory
+# You can find the user base binary directory by running python -m site --user-base and adding bin to the end.
+python -m pip install  --user ansible
+ansible --version
+which ansible
+# Show information about one or more installed packages
+python -m pip show ansible
 ```
