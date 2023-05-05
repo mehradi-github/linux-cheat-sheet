@@ -1,7 +1,7 @@
-# Linux Command Line Cheat Sheet
+# Installing Python using Linux Command Line
 
 
-- [Linux Command Line Cheat Sheet](#linux-command-line-cheat-sheet)
+- [Installing Python using Linux Command Line](#installing-python-using-linux-command-line)
   - [Installing Python from Source](#installing-python-from-source)
     - [The libraries and dependencies necessary to build Python:](#the-libraries-and-dependencies-necessary-to-build-python)
     - [Get latest Python release and build:](#get-latest-python-release-and-build)
