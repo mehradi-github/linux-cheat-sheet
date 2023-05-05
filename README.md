@@ -123,5 +123,22 @@ source ~/envs/ansible-env/bin/activate
 # Deactivating the virtual environment 
 deactivate
 
+# Installing ansible version 7.5.0
+python -m pip install ansible==7.5.0
+# Upgrading the ansible to the latest version
+python -m pip install --upgrade ansible
+
+# Displaying information about ansible
+python -m pip show ansible
+
+# Displaying all of the packages installed in the virtual environment
+python -m pip list
+
+# Producing list of the installed packages in requirements.txt
+python -m pip freeze > requirements.txt
+cat requirements.txt
+
+# Installing collected packages
+python -m pip install -r requirements.txt
 
 ```
