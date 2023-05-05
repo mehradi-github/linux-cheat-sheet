@@ -63,10 +63,14 @@ sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.7 2
 sudo update-alternatives --list python
 sudo update-alternatives --config python
 
+python --version
 #Ensuring pip is available
 python -m pip -V
 
-#If you see an error like No module named pip
+#If you see an error, there are 2 mechanisms to install pip:
+# 1) Python comes with an ensurepip module, which can install pip in a Python environment.
+python -m ensurepip --upgrade
+# 2) Python script that uses some bootstrapping logic to install pip
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python get-pip.py --user
 
@@ -84,6 +88,9 @@ sudo apt install software-properties-common
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt install python3.11
 python3.11 --version
+python -m pip -V
+#If you see an error
+apt install python3-pip
 
 ```
 
