@@ -8,6 +8,7 @@
     - [Change python version system-wide with update-alternatives python](#change-python-version-system-wide-with-update-alternatives-python)
   - [Installing Python using apt](#installing-python-using-apt)
   - [Installing Packages using pip](#installing-packages-using-pip)
+  - [Virtual environments and packages](#virtual-environments-and-packages)
 
 
 ## Installing Python from Source
@@ -105,4 +106,22 @@ ansible --version
 which ansible
 # Show information about one or more installed packages
 python -m pip show ansible
+```
+
+## [Virtual environments and packages](https://docs.python.org/3/tutorial/venv.html)
+Applications will sometimes need a specific version of a library.virtual environment, a cooperatively isolated runtime environment that allows Python users and applications to install and upgrade Python distribution packages without interfering with the behaviour of other Python applications running on the same system.
+
+```sh
+sudo apt install python3.11-dev python3.11-venv -y
+# Creating Virtual Environments
+mkdir ~/envs && cd ~/envs
+python -m venv ansible-env
+
+# Activating the virtual environment 
+source ~/envs/ansible-env/bin/activate
+
+# Deactivating the virtual environment 
+deactivate
+
+
 ```
