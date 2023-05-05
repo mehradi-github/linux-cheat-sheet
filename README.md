@@ -60,7 +60,7 @@ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.11 1
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.7 2
 
 #Confirm the new setting.
-sudo update-alternatives --list | grep -i python
+sudo update-alternatives --list python
 sudo update-alternatives --config python
 
 #Ensuring pip is available
